@@ -1,0 +1,13 @@
+body {
+  background: aliceblue;
+}
+
+img {
+  width: 20%;
+  display: block;
+}
+
+button {
+  border: 1px solid white;
+  background: white;
+}

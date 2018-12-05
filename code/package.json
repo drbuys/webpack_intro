@@ -1,0 +1,46 @@
+{
+  "name": "webpack_fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-dev-server": "webpack-dev-server",
+    "webpack": "webpack",
+    "prod:custom": "yarn prod --env.presets custom",
+    "prod:compress": "yarn prod --env.presets compress",
+    "prod:analyze": "yarn prod --env.presets analyze",
+    "prod": "yarn webpack --env.mode production",
+    "dev:bundle": "yarn webpack --env.mode development",
+    "dev": "yarn webpack-dev-server --env.mode development --hot",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js --env.mode production",
+    "debug:custom": "yarn debug --env.presets custom"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "compression-webpack-plugin": "^1.1.11",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "fork-ts-checker-webpack-plugin": "^0.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "puppeteer": "^1.5.0",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.4.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.15.1",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Zak Buys",
+  "license": "ISC"
+}
